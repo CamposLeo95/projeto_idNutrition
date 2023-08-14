@@ -1,22 +1,28 @@
+// Styles
 import * as S from "./styles"
 
+// Components
+import BtnMain from "../BtnMain";
+
 interface SideBarProps {
-    active: boolean;
-    setActive:React.Dispatch<React.SetStateAction<boolean>>
+    showmenu: boolean;
+    setShowMenu:React.Dispatch<React.SetStateAction<boolean>>
+    list: string[]
 }
 
-export default function SideBar({ active, setActive } : SideBarProps){
+export default function SideBar({ showmenu, setShowMenu, list } :SideBarProps){
 
     const handleLink = () => {
-        setActive(false)
+        setShowMenu(false)
     }
+
     return(
-        <S.Nav active={ active }>
-            <S.MenuNav active={ active }>
-                <li onClick={handleLink}>Inicio</li>
-                <li onClick={handleLink}>Produtos</li>
-                <li onClick={handleLink}>Contato</li>
-                <li onClick={handleLink}>Sobre Nós</li>
+        <S.Nav showmenu={ showmenu.toString()}>
+            <S.MenuNav showmenu={ showmenu.toString() }>
+                {list.map((item, key) => (
+                    <li key={key} onClick={handleLink}>{item}</li>
+                ))}
+                <BtnMain bgcolor="#fe731d" handleClick={() => console.log("clic")}>comprar</BtnMain>
             </S.MenuNav>
         </S.Nav>
     )
