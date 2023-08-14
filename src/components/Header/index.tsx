@@ -1,26 +1,33 @@
+// Styles
 import * as S from "./styles"
+
+// Icons
 import { BsSearch, BsList, BsXLg } from "react-icons/bs";
 
+// Images
+import logo from "../../assets/logo.png";
 
-import logo from "../../assets/logo.png"
-import SideBar from "../SideBar"
+// Components
+import NavBar from "../NavBar";
 
+interface IHeaderProps {
+    showmenu: boolean
+    setShowMenu:React.Dispatch<React.SetStateAction<boolean>>
+    listNav: string[]
+}
 
-import { useState } from "react";
-
-export default function Header(){
-
-    const [menuOpen, setMenuOpen] = useState<boolean>(false)
+export default function Header({showmenu, setShowMenu, listNav} : IHeaderProps){
 
     return(
         <S.Header>
             <BsSearch className="icons"/>
             <S.Logo src={ logo } alt="" />
-            {menuOpen 
-                ? <BsXLg className="icons" onClick={() => setMenuOpen(false)}/>
-                : <BsList className="icons" onClick={() => setMenuOpen(true)}/> 
+            {showmenu 
+                ? <BsXLg className="icons" onClick={() => setShowMenu(false)}/>
+                : <BsList className="icons" onClick={() => setShowMenu(true)}/> 
             }
-            <SideBar active={ menuOpen } setActive={setMenuOpen}/>
+            
+            <NavBar list={ listNav }></NavBar>
         </S.Header>
     )
 }

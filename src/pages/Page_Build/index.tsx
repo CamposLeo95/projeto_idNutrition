@@ -1,5 +1,7 @@
+// Styles
 import * as S from "./styles";
 
+// Images
 import Digital from "../../assets/Digital.svg"
 import IconFace from "../../assets/icon-face.svg"
 import IconInsta from "../../assets/icon-insta.svg"
