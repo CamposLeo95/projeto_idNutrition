@@ -1,18 +1,19 @@
 import styled from "styled-components"
 
 interface IpropsInterface{
-    active:  boolean;
+    showmenu:  string | undefined;
 }
 
 
 export const Nav = styled.nav<IpropsInterface>`
     background-color: #5858585b;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     top: 70px;
-    opacity: ${props => props.active ? '1' : '0'};
+    opacity: ${props => props.showmenu == "true" ? '1' : '0'};
     transition: .5s;
+    z-index: ${props => props.showmenu == "true" ? '1000' : '0'};
 
 `
 
@@ -20,13 +21,13 @@ export const MenuNav = styled.ul<IpropsInterface>`
     width: 70%;
     height: 100vh;
     position: absolute;
-    background-color: #ffffff;
+    background-color: ${props => props.theme.whiteColor};
     right: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    animation: ${props => props.active ? 'showSideBar .4s' : 'closeSideBar .4s'};
+    animation: ${props => props.showmenu == "true" ? 'showSideBar .4s' : 'closeSideBar .4s'};
 
     li{
         margin-top: 20px;

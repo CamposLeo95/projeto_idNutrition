@@ -6,6 +6,11 @@ export const Wrapper = styled.main`
     & .text-cinza{
         width: 100vw;
         text-align: center;
-        background-color: #f6f6f6;
+        padding: 0 30px;
+        background-color: ${props => props.theme.lightGrayColor};
+
+        @media (min-width: 835px) {
+            display: none;
+        }
     }
 `

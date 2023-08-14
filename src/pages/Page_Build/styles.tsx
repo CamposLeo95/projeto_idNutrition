@@ -13,7 +13,7 @@ export const ContainerText = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;    
-    font-size: 35px;
+    font-size: ${props => props.theme.text_2xl};
     position: absolute;
     top: 35%;
     text-align:center;
@@ -41,7 +41,7 @@ export const ContainerText = styled.div`
     }
 
     @media (min-width: 768px) {
-        font-size: 40px;
+        font-size: ${props => props.theme.text_5xl};
         top: 40%;
 
         & .second-text{
