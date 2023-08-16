@@ -2,15 +2,15 @@
 import * as S from "./styles"
 
 // Images
-import ImgMain from "../../assets/Digital.svg"
+import ImgMain from "../../../../assets/Digital.svg"
 
 // Components
-import BtnMain from "../../components/BtnMain"
+import BtnMain from "../../../../components/BtnMain"
 
 export default function Section1(){
     return(
-        <S.Wrapper>
-            <S.ImgDesk src={ ImgMain } alt="" />
+        <S.Wrapper id="inicio">
+            <S.ImgDesk src={ ImgMain } alt=""/>
             <S.MainContainer>
                 <S.TextMain>
                     <span>Lorem ipsum </span> dolor sit  amet consectetur adipi consectetur adipiadipiadipi ead

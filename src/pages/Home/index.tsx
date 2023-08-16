@@ -9,14 +9,33 @@ import { useNavigate } from "react-router-dom"
 
 // Components
 import Header from "../../components/Header"
-import Section1 from "../../sections/Section1"
-import Section2 from "../../sections/Section2"
 import SideBar from "../../components/SideBar"
+import Section1 from "./sections/Section1"
+import Section2 from "./sections/Section2"
+import Section3 from "./sections/Section3"
+import Section4 from "./sections/Section4"
 
 export default function Home(){
     const isBuild = false
     const navigate = useNavigate()
-    const listNav = ["Ínicio", "Produtos", "Contatos", "Sobre Nós"]
+    const listNav = [
+        {
+            id: "inicio",
+            name: "Início",
+        },
+        {
+            id: "produtos",
+            name: "Produtos"
+        }, 
+        {
+            id: "contatos",
+            name: "Contatos"
+        }, 
+        {
+            id: "sobre",
+            name: "Sobre Nós"
+        }
+    ]
 
     const [showMenu, setShowMenu] = useState<boolean>(false)
 
@@ -36,6 +55,8 @@ export default function Home(){
                 <SideBar showmenu={ showMenu } setShowMenu={ setShowMenu } list = { listNav }/>
                 <Section1 />
                 <Section2 />
+                <Section3 />
+                <Section4 />
             </S.Wrapper>
         </>
     )

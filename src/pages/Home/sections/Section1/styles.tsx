@@ -9,9 +9,9 @@ export const Wrapper = styled.div`
     
     @media (min-width: 913px) {
         margin-top: 80px;
-        gap: 10px;
+        gap: 20px;
     }
-    
+
 `
 
 export const MainContainer = styled.div`
@@ -24,7 +24,7 @@ export const MainContainer = styled.div`
      position: relative; 
      padding: 50px 0;
 
-     @media (min-width: 913px) {
+     @media (min-width: ${props => props.theme.tablet_max}) {
         margin-top: 150px;
         width: 50%;
         height: 65vh;
@@ -42,7 +42,7 @@ export const TextMain = styled.h1`
         color: #32abfb;
     }
 
-    @media (min-width: 913px) {
+    @media (min-width: ${props => props.theme.tablet_max}) {
         text-align: start;
         width: 100%;
         font-size: ${props => props.theme.text_4xl};
@@ -58,7 +58,7 @@ export const ImgDesk = styled.img`
     min-width: 550px;
     height: 100%;
     
-    @media (max-width: 913px) {       
+    @media (max-width: ${props => props.theme.tablet_max}) {       
         display: none;
     }
 `
@@ -66,7 +66,7 @@ export const ImgDesk = styled.img`
 export const ImgMobile = styled.img`
     position: relative;
     max-width: 70%;
-    @media (min-width: 913px){
+    @media (min-width: ${props => props.theme.tablet_max}){
         display: none;
     }
 `
@@ -75,7 +75,7 @@ export const TextSecondary = styled.p`
     font-size: 16px;
     text-align: center;
 
-    @media (min-width: 913px) {
+    @media (min-width: ${props => props.theme.tablet_max}) {
         font-size: ${props => props.theme.text_lg};
         text-align: start;
         width: 100%;
@@ -88,7 +88,7 @@ export const BtnDiv = styled.div`
     justify-content: center;
     gap: 10px;
 
-    @media (min-width: 913px) {
+    @media (min-width: ${props => props.theme.tablet_max}) {
         margin-top: 50px;
         text-align: start;
         position: relative;

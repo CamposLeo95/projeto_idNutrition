@@ -15,18 +15,18 @@ export const Wrapper = styled.section`
 export const MainTitle = styled.h3`
     color: ${props => props.theme.darkGrayColor};
 
- @media (min-width: 768px) {
+ @media (min-width: ${props => props.theme.mobile}) {
     font-size: ${props => props.theme.text_3xl};
  }
 
- @media (min-width: 1024px) {
+ @media (min-width: ${props => props.theme.desk}) {
     font-size: ${props => props.theme.text_4xl};
  }
 `
 export const SubTitle = styled.p`
     color: ${props => props.theme.primaryColor};
 
-    @media (min-width: 768px) {
+    @media (min-width: ${props => props.theme.mobile}) {
     font-size: ${props => props.theme.text_2xl};
  }
 `
