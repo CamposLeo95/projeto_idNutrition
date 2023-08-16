@@ -40,7 +40,7 @@ export const ContainerText = styled.div`
         color: #0cbffb;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: ${props => props.theme.mobile}) {
         font-size: ${props => props.theme.text_5xl};
         top: 40%;
 
@@ -64,7 +64,7 @@ export const ContainerLogo = styled.div`
 export const ImgMain = styled.img`
     width: 325px;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${props => props.theme.mobile}) {
         width: 500px;
     }
 `
