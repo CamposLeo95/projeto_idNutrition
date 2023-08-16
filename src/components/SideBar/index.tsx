@@ -4,6 +4,9 @@ import * as S from "./styles"
 // Components
 import BtnMain from "../BtnMain";
 
+
+import { Link  } from "react-scroll";
+
 // Interface
 interface SideBarProps {
     showmenu: boolean;
@@ -24,11 +27,19 @@ export default function SideBar({ showmenu, setShowMenu, list } :SideBarProps){
         <S.Nav showmenu={ showmenu.toString()}>
             <S.MenuNav showmenu={ showmenu.toString() }>
                 {list.map((item, key) => (
-                    <a href={`#${item.id}`}>
-                        <li key={key} onClick={handleLink}>{item.name}</li>
-                    </a>
+                    <Link
+                        className="links"
+                        key ={key}
+                        activeClass="active"
+                        to={item.id}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        onClick={handleLink}
+                    >{item.name}</Link>
                 ))}
-                <BtnMain bgcolor="#fe731d" handleClick={() => console.log("clic")}>comprar</BtnMain>
+                <BtnMain bgcolor="#fe731d" handleClick={() => console.log("click")}>comprar</BtnMain>
             </S.MenuNav>
         </S.Nav>
     )
