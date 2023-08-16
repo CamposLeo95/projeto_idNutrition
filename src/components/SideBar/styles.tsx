@@ -4,7 +4,6 @@ interface IpropsInterface{
     showmenu:  string | undefined;
 }
 
-
 export const Nav = styled.nav<IpropsInterface>`
     background-color: #5858585b;
     position: fixed;
@@ -26,12 +25,9 @@ export const MenuNav = styled.ul<IpropsInterface>`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    padding: 20px;
     animation: ${props => props.showmenu == "true" ? 'showSideBar .4s' : 'closeSideBar .4s'};
-
-    li{
-        margin-top: 20px;
-    }
 
     @keyframes showSideBar {
         from{

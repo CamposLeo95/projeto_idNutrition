@@ -6,17 +6,20 @@ type ImgCardProps ={
 }
 
 export const CardContainer = styled.div`
-    width: 20%;
-    min-width: 250px;
+    position: relative;
+    min-width: 280px;
+    height: 100%;
     gap: 20px;
     margin: 10px;
     background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
 `
 export const ImgCard = styled.div <ImgCardProps>`
     position: relative;
     width: 100%;
-    height: 350px;
-    border-radius: 15px;
+    height: 320px;
+    border-radius: 15px 15px 0px 0px;
     padding: 30px;
     overflow: hidden;
     display: flex;
@@ -28,7 +31,6 @@ export const ImgCard = styled.div <ImgCardProps>`
     display: flex;
     align-items: start;
     color: ${props => props.textcolor == "true" ? "#fff" : "#000"};
-
 `
 
 export const ImgConteudo = styled.div`
@@ -50,12 +52,13 @@ export const ImgLink = styled.a`
     border-radius: 0 8px 8px 0;
     text-align: center;
     cursor: pointer;
-    
 `
 
 export const TextCard = styled.div`
     width: 100%;
-    padding: 5px;
-
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: ${props => props.theme.text_sm};
 `

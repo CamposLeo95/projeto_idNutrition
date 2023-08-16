@@ -6,12 +6,8 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 50px;
+    padding: 50px 0;
     cursor: pointer;
-    gap: 10px;
-    
-    & .swiper{
-        width: 100%;
-    }
+
 
 `
