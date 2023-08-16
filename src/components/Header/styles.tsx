@@ -20,7 +20,7 @@ export const Header = styled.header`
         cursor: pointer;
     }
 
-    @media (min-width: 835px) {
+    @media (min-width: ${props => props.theme.tablet_min}) {
         padding: 0 70px;
         .icons{
             display: none;

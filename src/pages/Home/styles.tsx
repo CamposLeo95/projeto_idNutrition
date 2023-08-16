@@ -9,7 +9,7 @@ export const Wrapper = styled.main`
         padding: 0 30px;
         background-color: ${props => props.theme.lightGrayColor};
 
-        @media (min-width: 835px) {
+        @media (min-width: ${props => props.theme.tablet_min}) {
             display: none;
         }
     }
