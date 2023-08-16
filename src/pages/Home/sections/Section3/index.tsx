@@ -43,7 +43,7 @@ export default function Section3(){
     ]
 
     return(
-        <S.Wrapper id="contatos">
+        <S.Wrapper  id ="produtos">
             <TitleSection 
                 title="Lorem ipsum dolor sit amet consectetur"
                 subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque placeat esse repudiandae rem a quas"
