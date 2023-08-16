@@ -5,6 +5,7 @@ import * as S from "./styles"
 
 import ImgMain from "../../assets/Digital.svg"
 
+// Interface
 interface IBtnMainProps {
     children: ReactNode
     bgcolor: string

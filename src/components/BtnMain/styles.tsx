@@ -16,10 +16,14 @@ export const BtnContainer = styled.button<IBtnContainerProps>`
     color: ${props => props.theme.whiteColor};
     font-weight:lighter;
     text-transform: capitalize; 
-    font-size: ${props => props.theme.text_lg};
+    font-size: ${props => props.theme.text_sm};
     cursor: pointer;
 
     & img{
         width: 25px;
+    }
+
+    @media (min-width: ${props => props.theme.mobile}) {
+        font-size: ${props => props.theme.text_lg}
     }
 `
