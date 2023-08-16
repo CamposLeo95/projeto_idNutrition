@@ -10,10 +10,14 @@ import logo from "../../assets/logo.png";
 // Components
 import NavBar from "../NavBar";
 
+// Inteface
 interface IHeaderProps {
     showmenu: boolean
     setShowMenu:React.Dispatch<React.SetStateAction<boolean>>
-    listNav: string[]
+    listNav: {
+        id: string
+        name: string
+    }[]
 }
 
 export default function Header({showmenu, setShowMenu, listNav} : IHeaderProps){
