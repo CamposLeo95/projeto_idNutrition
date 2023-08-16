@@ -1,12 +1,11 @@
 export const DefaultTheme = {
+    // Color
     whiteColor: "#fff",
     lightGrayColor: "#f6f6f6",
     darkGrayColor: "#313131",
     blackColor: "#000",
     primaryColor: "#1d8afe",
     secondColor: "#fe731d",
-
-
     
     // Fonts-sizes
     text_xs: "1.2rem",
@@ -20,5 +19,9 @@ export const DefaultTheme = {
     text_5xl: "4.8rem", 
     text_6xl: "6.4rem",
 
-
+    // Media-queries
+    mobile: "768px",
+    tablet_min: "835px",
+    tablet_max: "913px",
+    desk: "1024px",
 }
