@@ -14,10 +14,4 @@ export const Container = styled.div`
         width: 100%;
     }
 
-    & .card{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        width: 100vw;
-    }
 `
