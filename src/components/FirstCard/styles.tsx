@@ -7,7 +7,7 @@ type ImgCardProps ={
 
 export const CardContainer = styled.div`
     width: 20%;
-    min-width: 290px;
+    min-width: 250px;
     gap: 20px;
     margin: 10px;
     background-color: #fff;
