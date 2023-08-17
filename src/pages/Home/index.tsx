@@ -16,6 +16,7 @@ import Section3 from "./sections/Section3"
 import Section4 from "./sections/Section4"
 
 export default function Home(){
+
     const isBuild = false
     const navigate = useNavigate()
     const listNav = [

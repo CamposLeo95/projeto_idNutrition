@@ -19,7 +19,7 @@ export const CardContainer = styled.div`
     padding: 0 70px;
 
 
-    @media (max-width: ${props => props.theme.mobile}) {
+    @media (max-width: ${props => props.theme.tablet_min}) {
         flex-direction: column
     }
 

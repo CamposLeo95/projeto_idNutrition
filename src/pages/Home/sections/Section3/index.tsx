@@ -51,14 +51,14 @@ export default function Section3(){
             <S.CardContainer>
 
             {listCards.map((item, key) => (
-            <FirstCard 
-              img={item.img} 
-              textCard={item.cardText}
-              textImg={item.imgText}
-              icon={item.icon}
-              link={item.link}
-              textcolor={item.textColor}
-            />
+              <FirstCard key={key}
+                img={item.img} 
+                textCard={item.cardText}
+                textImg={item.imgText}
+                icon={item.icon}
+                link={item.link}
+                textcolor={item.textColor}
+              />
             ))}
             </S.CardContainer>
         </S.Wrapper>

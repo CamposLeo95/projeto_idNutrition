@@ -18,14 +18,15 @@ interface SliderCoverFlowProps{
   children: ReactNode
 }
 
-export default function SliderCoverFlow ({children}: SliderCoverFlowProps) {
+export default function SliderCoverFlow ({ children }: SliderCoverFlowProps) {
 
   return (
     <S.Container>
       <Swiper
+        style={{ height: '450px' }}
         className="swiper"
         modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
-        // pagination
+        pagination
         slidesPerView={4}
         loop
         autoplay ={true}
@@ -34,7 +35,7 @@ export default function SliderCoverFlow ({children}: SliderCoverFlowProps) {
         coverflowEffect={
           {
             rotate: 0,
-            depth: 70,
+            depth: 40,
             modifier: 7,
             slideShadows: false
           }

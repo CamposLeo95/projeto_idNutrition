@@ -111,7 +111,7 @@ export default function Section4(){
             />
             <SliderCoverFlow>
                 {listCards.map((item, key) => (
-                    <SwiperSlide className="card" key={key}>
+                    <SwiperSlide className="card" key={key}style={{height: '400px' }}>
                         <FirstCard 
                         img={item.img} 
                         textCard={item.cardText}

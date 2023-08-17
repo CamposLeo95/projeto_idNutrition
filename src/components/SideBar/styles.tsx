@@ -13,7 +13,7 @@ export const Nav = styled.nav<IpropsInterface>`
     opacity: ${props => props.showmenu == "true" ? '1' : '0'};
     transition: .5s;
     z-index: ${props => props.showmenu == "true" ? '1000' : '0'};
-
+    font-size: ${props => props.theme.text_lg}
 `
 
 export const MenuNav = styled.ul<IpropsInterface>`
@@ -25,8 +25,8 @@ export const MenuNav = styled.ul<IpropsInterface>`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 50px;
+    padding-top: 50px;
     animation: ${props => props.showmenu == "true" ? 'showSideBar .4s' : 'closeSideBar .4s'};
 
     @keyframes showSideBar {
