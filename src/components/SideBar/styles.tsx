@@ -12,8 +12,9 @@ export const Nav = styled.nav<IpropsInterface>`
     top: 70px;
     opacity: ${props => props.showmenu == "true" ? '1' : '0'};
     transition: .5s;
-    z-index: ${props => props.showmenu == "true" ? '1000' : '0'};
-    font-size: ${props => props.theme.text_lg}
+    z-index: ${props => props.showmenu == "true" ? '5' : '-1'};
+    font-size: ${props => props.theme.text_lg};
+
 `
 
 export const MenuNav = styled.ul<IpropsInterface>`
@@ -28,6 +29,15 @@ export const MenuNav = styled.ul<IpropsInterface>`
     gap: 50px;
     padding-top: 50px;
     animation: ${props => props.showmenu == "true" ? 'showSideBar .4s' : 'closeSideBar .4s'};
+
+    & .link{
+        transition: 0.3s ease-in-out;
+    }
+
+    & .link:hover{
+        scale: 1.2;
+        color: #fe731d;
+    }
 
     @keyframes showSideBar {
         from{

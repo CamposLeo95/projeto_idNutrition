@@ -28,7 +28,7 @@ export default function SideBar({ showmenu, setShowMenu, list } :SideBarProps){
             <S.MenuNav showmenu={ showmenu.toString() }>
                 {list.map((item, key) => (
                     <Link
-                        className="links"
+                        className="link"
                         key ={key}
                         activeClass="active"
                         to={item.id}
