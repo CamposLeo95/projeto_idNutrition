@@ -20,6 +20,7 @@ export default function NavBar({ list } : NavBarProps){
         <S.NavBar>
             {list.map((item, key) => (
                 <Link
+                    className ="link"
                     key ={key}
                     activeClass="active"
                     to={item.id}
@@ -27,7 +28,9 @@ export default function NavBar({ list } : NavBarProps){
                     smooth={true}
                     offset={-70}
                     duration={500}
-                >{item.name}</Link>
+                >
+                    {item.name}
+                </Link>
             ))}
             <BtnMain bgcolor="#fe731d" >comprar</BtnMain>
         </S.NavBar>
