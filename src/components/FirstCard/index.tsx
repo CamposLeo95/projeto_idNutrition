@@ -11,10 +11,10 @@ interface FirstCardProps {
     textImg: string
     textCard: string
     textcolor?: boolean
-    // link: string
+    link: string
 }
 
-export default function FirstCard({img, icon: Icon, textImg, textCard, textcolor} : FirstCardProps){
+export default function FirstCard({img, icon: Icon, textImg, textCard, textcolor, link} : FirstCardProps){
     return(
         <S.CardContainer>
             <S.ImgCard img={img} textcolor={textcolor ? "true" : "false"}>
