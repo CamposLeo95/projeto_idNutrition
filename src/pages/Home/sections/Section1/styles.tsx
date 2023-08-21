@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
         margin-top: 80px;
         gap: 20px;
     }
-
 `
 
 export const MainContainer = styled.div`
@@ -27,8 +26,7 @@ export const MainContainer = styled.div`
      @media (min-width: ${props => props.theme.tablet_max}) {
         margin-top: 150px;
         width: 50%;
-        height: 65vh;
-    
+        height: 65vh;  
      }
 
 `
@@ -39,7 +37,7 @@ export const TextMain = styled.h1`
     text-align: center;
 
     & span {
-        color: #32abfb;
+        color: ${props => props.theme.primaryColor};
     }
 
     @media (min-width: ${props => props.theme.tablet_max}) {
