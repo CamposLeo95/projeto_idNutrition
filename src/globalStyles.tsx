@@ -14,16 +14,17 @@ export default createGlobalStyle`
 
   html{
     font-size: 62.5%;
+
+  }
+
+  body{
+    overflow-x: hidden;
   }
 
   a{
-    color: #1d8afe;
-    transition: 0.2s ease-in-out;
+    color: ${props => props.theme.primaryColor};
+    
     cursor: pointer;
   }
 
-  a:hover{
-    scale: 1.1;
-    color: #fe731d;
-  }
 `
