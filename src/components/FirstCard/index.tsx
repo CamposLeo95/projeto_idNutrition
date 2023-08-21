@@ -22,9 +22,9 @@ export default function FirstCard({img, icon: Icon, textImg, textCard, textcolor
                     <Icon/>
                     <p>{textImg}</p>
                 </S.ImgConteudo>
-                {/* <S.ImgLink href={link} target="_blank">
-                    <p>Veja Mais</p>
-                </S.ImgLink> */}
+                {/* <S.ImgLink href={link} target="_blank"> */}
+                    {/* <p>Veja Mais</p> */}
+                {/* </S.ImgLink> */}
             </S.ImgCard>
             <S.TextCard>
                 <p>{textCard}</p>
