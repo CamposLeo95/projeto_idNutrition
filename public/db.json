@@ -1,6 +1,7 @@
+
 [
     {
-        "img": "campo",
+        "img": "../src/assets/campo.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -8,7 +9,7 @@
         "textColor": true
     },
     {
-        "img": "surf",
+        "img": "../src/assets/surf.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -16,7 +17,7 @@
         "textColor": false
     },
     {
-        "img": "praia",
+        "img": "../src/assets/praia.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -24,7 +25,7 @@
         "textColor": true
     },
     {
-        "img": "surf",
+        "img": "../src/assets/surf.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -32,7 +33,7 @@
         "textColor": false
     },
     {
-        "img": "campo",
+        "img": "../src/assets/praia.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -40,7 +41,7 @@
         "textColor": true
     },
     {
-        "img": "praia",
+        "img": "../src/assets/campo.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -48,7 +49,7 @@
         "textColor": false
     },
     {
-        "img": "campo",
+        "img": "../src/assets/surf.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -56,7 +57,7 @@
         "textColor": true
     },
     {
-        "img": "surf",
+        "img": "../src/assets/praia.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -65,7 +66,7 @@
     },
 
     {
-        "img": "praia",
+        "img": "../src/assets/campo.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
@@ -74,7 +75,7 @@
     },
 
     {
-        "img": "surf",
+        "img": "../src/assets/surf.png",
         "imgText": "Lorem ipsum dolor sit",
         "cardText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
         "icon": "BsFillEmojiLaughingFill",
