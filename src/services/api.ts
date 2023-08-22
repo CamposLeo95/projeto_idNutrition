@@ -1,8 +1,8 @@
-import axios from "axios"
+import axios from "axios";
 
 const api = axios.create({
-    // baseURL: "http://localhost:5173"
-    baseURL: "https://projeto-id-nutrition-n54z83u2m-camposleo95.vercel.app"
-})
+    // baseURL: "http://localhost:5174"
+    baseURL: "https://projeto-id-nutrition.vercel.app/"
+});
 
-export default api
+export default api;
