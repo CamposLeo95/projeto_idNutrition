@@ -2,10 +2,10 @@
 import * as S from "./styles"
 
 // Components
-import BtnMain from "../BtnMain";
+import BtnMain from "../BtnMain"
 
 
-import { Link  } from "react-scroll";
+import { Link  } from "react-scroll"
 
 // Interface
 interface SideBarProps {

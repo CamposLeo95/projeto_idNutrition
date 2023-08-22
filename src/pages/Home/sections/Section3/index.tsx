@@ -2,8 +2,8 @@
 import * as S from "./styles"
 
 // Componentes
-import TitleSection from "../../../../components/TitleSection";
-import FirstCard from "../../../../components/FirstCard";
+import TitleSection from "../../../../components/TitleSection"
+import FirstCard from "../../../../components/FirstCard"
 
 // Imagens
 import campo from "../../../../assets/campo.png"
@@ -11,7 +11,7 @@ import surf from "../../../../assets/surf.png"
 import praia from "../../../../assets/praia.png"
 
 // Icons
-import { BsFillEmojiLaughingFill } from "react-icons/bs";
+import { BsFillEmojiLaughingFill } from "react-icons/bs"
 
 export default function Section3(){
 

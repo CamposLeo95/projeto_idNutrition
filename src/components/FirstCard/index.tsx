@@ -2,7 +2,7 @@
 import * as S from "./styles"
 
 //Icons 
-import { IconType } from 'react-icons';
+import { IconType } from 'react-icons'
 
 // Interface
 interface FirstCardProps {

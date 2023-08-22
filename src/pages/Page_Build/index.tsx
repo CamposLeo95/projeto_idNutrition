@@ -1,5 +1,5 @@
 // Styles
-import * as S from "./styles";
+import * as S from "./styles"
 
 // Images
 import Digital from "../../assets/Digital.svg"

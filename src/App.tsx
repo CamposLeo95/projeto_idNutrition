@@ -1,13 +1,13 @@
 // Styles
-import GlobalStyles from './globalStyles';
-import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './globalStyles'
+import { ThemeProvider } from 'styled-components'
 
 // Themes
-import { DefaultTheme } from './theme.js';
+import { DefaultTheme } from './theme.js'
 
 // Router-Dom
-import router from './router.js';
-import {  RouterProvider } from "react-router-dom";
+import router from './router.js'
+import {  RouterProvider } from "react-router-dom"
 
 function App() {
 
