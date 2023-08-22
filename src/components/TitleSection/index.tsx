@@ -10,7 +10,6 @@ interface TitleSectionProps {
 export default function TitleSection({title, subtitle} : TitleSectionProps){
     return(
         <S.TitleContainer>
-            <hr />
             <S.Title>
                 { title }
             </S.Title>

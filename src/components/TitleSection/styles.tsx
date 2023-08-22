@@ -8,6 +8,7 @@ export const TitleContainer = styled.div`
     gap: 10px;
     padding: 0 70px;
     margin-top: 20px;
+    
 `
 
 export const Title = styled.h3`
