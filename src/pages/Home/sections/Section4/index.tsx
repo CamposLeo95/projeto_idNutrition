@@ -1,6 +1,9 @@
 // Styles
 import * as S from "./styles"
 
+// Hooks
+import { useEffect, useState } from "react"
+
 // Componentes
 import SliderCoverFlow from "../../../../components/SliderCoverFlow"
 import TitleSection from "../../../../components/TitleSection"
@@ -9,99 +12,34 @@ import FirstCard from "../../../../components/FirstCard"
 // Swipper
 import {  SwiperSlide } from 'swiper/react'
 
-// Imagens
-import campo from "../../../../assets/campo.png"
-import surf from "../../../../assets/surf.png"
-import praia from "../../../../assets/praia.png"
-
 // Icons
 import { BsFillEmojiLaughingFill } from "react-icons/bs";
 
+// Axios
+import api from "../../../../services/api"
+
+type listaDBProps ={
+  cardText: string
+  img: string
+  imgText: string
+  link: string
+  textColor: boolean
+}
+
 export default function Section4(){
-    const listCards = [
-        {
-          img: campo,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: true,
-        },
-        {
-          img: surf,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: false,
-        },
-        {
-          img: praia,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: true,
-        },
-        {
-          img: surf,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: false,
-        },
-        {
-          img: campo,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: true,
-        },
-        {
-          img: praia,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: false,
-        },
-        {
-          img: campo,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: true,
-        },
-        {
-          img: surf,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: false,
-        },
-    
-        {
-          img: praia,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: true,
-        },
-    
-        {
-          img: surf,
-          imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
-          icon: BsFillEmojiLaughingFill,
-          link: "http://google.com",
-          textColor: true,
-        },
-      ]  
+
+      const [listaDB, setListaDB] = useState<listaDBProps[]>([])
+
+      useEffect(()=>{
+        api
+          .get("/db.json")
+          .then((res)=> setListaDB(res.data))
+          .catch((err) => {
+            console.log(err)
+          })     
+      }, [])
+
+      listaDB ? console.log(listaDB) : console.log("vazio") 
 
     return(
         <S.Wrapper id="contatos">
@@ -110,15 +48,15 @@ export default function Section4(){
                 subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione quidem asperiores nulla, impedit odit. Libero,"
             />
             <SliderCoverFlow>
-                {listCards.map((item, key) => (
-                    <SwiperSlide className="card" key={key}style={{height: '400px' }}>
+                {listaDB && listaDB.map((item, key) => (
+                    <SwiperSlide className="card" key={key}style={{ height: '400px' }}>
                         <FirstCard 
-                        img={item.img} 
-                        textCard={item.cardText}
-                        textImg={item.imgText}
-                        icon={item.icon}
-                        link={item.link}
-                        textcolor={item.textColor}
+                          img={item.img} 
+                          textCard={item.cardText}
+                          textImg={item.imgText}
+                          icon={BsFillEmojiLaughingFill}
+                          link={item.link}
+                          textcolor={item.textColor}
                         />
                     </SwiperSlide>
                 ))}
