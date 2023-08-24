@@ -21,9 +21,7 @@ export default createGlobalStyle`
     overflow-x: hidden;
   }
 
-  a{
-    color: ${props => props.theme.primaryColor};
-    
+  a{    
     cursor: pointer;
   }
 

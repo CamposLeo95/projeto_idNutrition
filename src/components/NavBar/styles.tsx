@@ -4,6 +4,7 @@ export const NavBar = styled.div`
     display: none;
     gap: 20px;
     font-size: ${props => props.theme.text_base};
+    color: ${props => props ? `${props.theme.blackColor}`: `#111111`};
     
 
     & .link{

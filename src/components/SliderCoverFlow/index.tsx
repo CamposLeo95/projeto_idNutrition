@@ -5,7 +5,7 @@ import * as S from "./styles"
 
 // Swipper
 import { Swiper } from 'swiper/react'
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay, EffectCoverflow, FreeMode } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -24,22 +24,17 @@ export default function SliderCoverFlow ({ children }: SliderCoverFlowProps) {
     <S.Container>
       <Swiper
         style={{ height: '450px' }}
-        className="swiper"
-        modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+        modules={[Navigation, Pagination, Autoplay, EffectCoverflow, FreeMode]}
         pagination
-        slidesPerView={4}
+        navigation
+        slidesPerView={3}
         loop
         autoplay ={true}
-        effect={'coverflow'}
+        freeMode = {{
+          sticky: true,
+          momentumVelocityRatio: 0.2,
+        }}
         centeredSlides={true}
-        coverflowEffect={
-          {
-            rotate: 0,
-            depth: 40,
-            modifier: 7,
-            slideShadows: false
-          }
-        }
       >
         {children}
       </Swiper>

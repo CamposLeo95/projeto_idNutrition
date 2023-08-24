@@ -7,19 +7,26 @@ type ImgCardProps ={
 
 export const CardContainer = styled.div`
     position: relative;
-    min-width: 280px;
+    min-width: 350px;
+    width: 400px;
     height: 100%;
-    gap: 20px;
     margin: 10px;
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px black;
+    border-radius: 2px;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    overflow: hidden;
+
+    &:hover{
+        box-shadow: 1px 1px 10px #6c6c6c;
+    }
 `
 export const ImgCard = styled.div <ImgCardProps>`
     position: relative;
     width: 100%;
-    height: 320px;
-    border-radius: 15px 15px 0px 0px;
+    min-height: 250px;
     padding: 30px;
     overflow: hidden;
     display: flex;
@@ -31,6 +38,9 @@ export const ImgCard = styled.div <ImgCardProps>`
     display: flex;
     align-items: start;
     color: ${props => props.textcolor == "true" ? "#fff" : "#000"};
+    cursor: pointer;
+    filter: blur(0.6px);
+
 `
 
 export const ImgConteudo = styled.div`
@@ -39,6 +49,7 @@ export const ImgConteudo = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 10px;
+
 `
 
 export const ImgLink = styled.a`
@@ -56,9 +67,10 @@ export const ImgLink = styled.a`
 
 export const TextCard = styled.div`
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     font-size: ${props => props.theme.text_sm};
 `

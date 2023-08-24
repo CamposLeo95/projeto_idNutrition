@@ -6,9 +6,9 @@ import TitleSection from "../../../../components/TitleSection"
 import FirstCard from "../../../../components/FirstCard"
 
 // Imagens
-import campo from "../../../../assets/campo.png"
-import surf from "../../../../assets/surf.png"
-import praia from "../../../../assets/praia.png"
+import man from "../../../../assets/man_gym.jpg"
+import woman from "../../../../assets/woman_gym.jpg"
+import halter from "../../../../assets/halter_gym.jpg"
 
 // Icons
 import { BsFillEmojiLaughingFill } from "react-icons/bs"
@@ -17,7 +17,7 @@ export default function Section3(){
 
     const listCards = [
         {
-          img: campo,
+          img: man,
           imgText: "Lorem ipsum dolor sit",
           cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
           icon: BsFillEmojiLaughingFill,
@@ -25,7 +25,7 @@ export default function Section3(){
           textColor: true,
         },
         {
-          img: surf,
+          img: woman,
           imgText: "Lorem ipsum dolor sit",
           cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
           icon: BsFillEmojiLaughingFill,
@@ -33,7 +33,7 @@ export default function Section3(){
           textColor: false,
         },
         {
-          img: praia,
+          img: halter,
           imgText: "Lorem ipsum dolor sit",
           cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
           icon: BsFillEmojiLaughingFill,

@@ -28,7 +28,6 @@ export const MainContainer = styled.div`
         width: 50%;
         height: 65vh;  
      }
-
 `
 
 export const TextMain = styled.h1`

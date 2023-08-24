@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 // Components
+import Space from "../../components/Space"
 import Header from "../../components/Header"
 import SideBar from "../../components/SideBar"
 import Section1 from "./sections/Section1"
@@ -57,7 +58,9 @@ export default function Home(){
                 <SideBar showmenu={ showMenu } setShowMenu={ setShowMenu } list = { listNav }/>
                 <Section1 />
                 <Section2 />
+                {/* <Space /> */}
                 <Section3 />
+                {/* <Space /> */}
                 <Section4 />
             </S.Wrapper>
             <Footer />

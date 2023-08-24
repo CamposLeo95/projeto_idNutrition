@@ -11,21 +11,25 @@ export const BtnContainer = styled.button<IBtnContainerProps>`
     padding: 6px 10px;
     gap: 5px;
     border: none;
-    border-radius: 30px;
-    background-color: ${props => props ? `${props.bgcolor}`: `#000`};
-    color: ${props => props.theme.whiteColor};
+    border-radius: 3px;
+    /* background-color: ${props => props ? `${props.bgcolor}`: `#000`}; */
+    background-color: ${props => props ? `${props.theme.whiteColor}`: `#000`};
+    /* color: ${props => props.theme.whiteColor}; */
+    color: ${props => props ? `${props.bgcolor}`: `#111111`};
     font-weight:lighter;
     text-transform: capitalize; 
     font-size: ${props => props.theme.text_sm};
+    font-weight: 500;
     transition: 0.2s ease-in;
-    border: 1px solid ${props => props ? `${props.bgcolor}`: `#000`};
+    border: 2px solid ${props => props ? `${props.bgcolor}`: `#000`};
     cursor: pointer;
 
     &:hover{
-        background-color: ${props => props ? `${props.theme.whiteColor}`: `#000`};
-        border: spin-border 1s 1px solid ${props => props ? `${props.bgcolor}`: `#000`};
-        color: ${props => props ? `${props.bgcolor}`: `#000`};
-        scale: 1.1;
+        /* background-color: ${props => props ? `${props.theme.whiteColor}`: `#000`}; */
+        background-color: ${props => props ? `${props.bgcolor}`: `#000`};
+        /* color: ${props => props ? `${props.bgcolor}`: `#000`}; */
+        color: ${props => props.theme.whiteColor};
+        /* scale: 1.1; */
     }
 
     & img{

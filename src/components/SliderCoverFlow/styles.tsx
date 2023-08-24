@@ -9,5 +9,13 @@ export const Container = styled.div`
     padding: 50px 0;
     cursor: pointer;
 
+    --swiper-navigation-color: red;
+    --swiper-navigation-sides-offset: 40px;
+    --swiper-navigation-size: 44px;
+
+    & {
+        
+    }
+
 
 `
