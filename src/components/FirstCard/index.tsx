@@ -18,7 +18,7 @@ interface FirstCardProps {
     button?: boolean
 }
 
-export default function FirstCard({ img, icon: Icon, textImg, textCard, textcolor } : FirstCardProps){
+export default function FirstCard({ img, textCard, textcolor } : FirstCardProps){
     return(
         <S.CardContainer>
             <S.ImgCard img={img} textcolor={textcolor ? "true" : "false"}>

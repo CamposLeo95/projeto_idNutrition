@@ -8,7 +8,7 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 // Components
-import Space from "../../components/Space"
+// import Space from "../../components/Space"
 import Header from "../../components/Header"
 import SideBar from "../../components/SideBar"
 import Section1 from "./sections/Section1"
