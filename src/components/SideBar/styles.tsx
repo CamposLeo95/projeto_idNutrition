@@ -5,36 +5,52 @@ interface IpropsInterface{
 }
 
 export const Nav = styled.nav<IpropsInterface>`
-    background-color: #5858585b;
-    position: fixed;
+
+    // Medidas
     width: 100vw;
     height: 100vh;
+
+    // Layouts
+    position: fixed;
     top: 70px;
-    opacity: ${props => props.showmenu == "true" ? '1' : '0'};
-    transition: .5s;
-    z-index: ${props => props.showmenu == "true" ? '5' : '-1'};
+
+    // Estilos
     font-size: ${props => props.theme.text_lg};
+    background-color: #5858585b;
+    opacity: ${props => props.showmenu == "true" ? '1' : '0'};
+    z-index: ${props => props.showmenu == "true" ? '5' : '-1'};
+    transition: .5s;
 
 `
 
 export const MenuNav = styled.ul<IpropsInterface>`
+
+    // Medidas
     width: 70%;
     height: 100vh;
+    padding-top: 50px;
+    gap: 50px;
+
+    // Layouts
     position: absolute;
-    background-color: ${props => props.theme.whiteColor};
     right: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding-top: 50px;
+
+    // Estilos
+    background-color: ${props => props.theme.whiteColor};
     animation: ${props => props.showmenu == "true" ? 'showSideBar .4s' : 'closeSideBar .4s'};
 
     & .link{
+
+        // Estilos
         transition: 0.3s ease-in-out;
     }
 
     & .link:hover{
+        
+        // Estilos
         scale: 1.2;
         color: #fe731d;
     }

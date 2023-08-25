@@ -27,7 +27,6 @@ export default function SliderCoverFlow ({ children }: SliderCoverFlowProps) {
         modules={[Navigation, Pagination, Autoplay, EffectCoverflow, FreeMode]}
         pagination
         navigation
-        slidesPerView={3}
         loop
         autoplay ={true}
         freeMode = {{
@@ -35,6 +34,18 @@ export default function SliderCoverFlow ({ children }: SliderCoverFlowProps) {
           momentumVelocityRatio: 0.2,
         }}
         centeredSlides={true}
+        breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }
+        }
       >
         {children}
       </Swiper>

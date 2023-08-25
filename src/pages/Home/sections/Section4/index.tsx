@@ -12,7 +12,6 @@ import {  SwiperSlide } from 'swiper/react'
 import DB from "../../../../db/db"
 
 export default function Section4(){
-    
 
     return(
         <S.Wrapper id="contatos">

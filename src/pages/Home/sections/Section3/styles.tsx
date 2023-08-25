@@ -2,26 +2,44 @@ import styled from "styled-components"
 
 
 export const Wrapper = styled.section`
+
+    // Medidas
     width: 100vw;
+    padding: 70px 70px;
+
+    // Layouts
+
+    // Estilos
     background-color: #f2f2f2;
-    padding: 80px 0;
+
 
     @media (max-width: ${props => props.theme.mobile}) {
+        // Medidas
         padding: 0px;
     }
 `
 
 export const CardContainer = styled.div`
+
+    // Medidas
+    margin: 30px 0;
+
+    // Layouts
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
-    /* gap: 20px; */
-    /* padding: 0 70px; */
+
+    // Estilos
 
 
-    @media (max-width: ${props => props.theme.tablet_min}) {
+    @media (max-width: ${props => props.theme.tablet_max}) {
+        // Medidas
+
+        // Layouts
         flex-direction: column
+
+        // Estilos
+        
     }
 
 `

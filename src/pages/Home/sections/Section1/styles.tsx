@@ -1,47 +1,87 @@
 import styled  from "styled-components";
 
 export const Wrapper = styled.div`
-    position: relative;
+    // Medidas
     padding: 0 30px;
     width:100vw;
+
+    // Layouts
+    position: relative;
     display: flex;
     justify-content: center;
     
+    // Estilos
+ 
     @media (min-width: 913px) {
+        // Medidas
         margin-top: 80px;
         gap: 20px;
+
+        // Layouts
+        
+        // Estilos
+
     }
 `
 
 export const MainContainer = styled.div`
-     display: flex;
-     width: 100%;
-     flex-direction: column;
-     gap: 25px;
-     align-items: center;
-     justify-content: start;
-     position: relative; 
-     padding: 50px 0;
+    // Medidas
+    width: 100%;
+    padding: 50px 0;
+    gap: 25px;
+
+    // Layouts
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative; 
+    
+    // Estilos
+
+
 
      @media (min-width: ${props => props.theme.tablet_max}) {
+        // Medidas
         margin-top: 150px;
         width: 50%;
         height: 65vh;  
+
+        // Layouts
+
+        // Estilos
+
      }
 `
 
 export const TextMain = styled.h1`
+    // Medidas
     width: 100%;
-    font-size: ${props => props.theme.text_2xl};
+
+    // Layouts
     text-align: center;
+    
+    // Estilos
+    font-size: ${props => props.theme.text_2xl};
+
 
     & span {
+            // Medidas
+
+    // Layouts
+    
+    // Estilos
         color: ${props => props.theme.primaryColor};
     }
 
     @media (min-width: ${props => props.theme.tablet_max}) {
-        text-align: start;
+        // Medidas
         width: 100%;
+
+        // Layouts
+        text-align: start;
+        
+        // Estilos
         font-size: ${props => props.theme.text_4xl};
 
     }
@@ -49,47 +89,94 @@ export const TextMain = styled.h1`
 `
 
 export const ImgDesk = styled.img`
-    position: relative;
-    top: 0px; 
+    // Medidas
     max-width: 40%;
     min-width: 550px;
     height: 100%;
+
+    // Layouts
+    position: relative;
+    top: 0px; 
     
-    @media (max-width: ${props => props.theme.tablet_max}) {       
+    // Estilos
+
+    @media (max-width: ${props => props.theme.tablet_max}) { 
+        // Medidas
+
+        // Layouts
         display: none;
+
+        // Estilos      
+
     }
 `
 
 export const ImgMobile = styled.img`
-    position: relative;
+    // Medidas
     max-width: 70%;
+
+    // Layouts
+    position: relative;
+    
+    // Estilos
+
+
     @media (min-width: ${props => props.theme.tablet_max}){
+        // Medidas
+
+        // Layouts
+        
+        // Estilos
         display: none;
     }
 `
 
 export const TextSecondary = styled.p`
-    font-size: 16px;
+    // Medidas
+
+    // Layouts
     text-align: center;
+    
+    // Estilos
+    font-size: 16px;
+
 
     @media (min-width: ${props => props.theme.tablet_max}) {
-        font-size: ${props => props.theme.text_lg};
-        text-align: start;
+        // Medidas
         width: 100%;
+
+        // Layouts
+        text-align: start;
+        
+        // Estilos
+        font-size: ${props => props.theme.text_lg};
+
     }
 `
 
 export const BtnDiv = styled.div`
+    // Medidas
     width: 100%;
-    display: flex;
-    justify-content: center;
     gap: 10px;
 
+    // Layouts
+    display: flex;
+    justify-content: center;
+    
+    // Estilos
+
+
     @media (min-width: ${props => props.theme.tablet_max}) {
+        // Medidas
         margin-top: 50px;
-        text-align: start;
+
+        // Layouts
         position: relative;
+        text-align: start;
         justify-content: start;
+        
+        // Estilos
+
     }
 
 

@@ -1,99 +1,154 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.footer`
+    // Medidas
     width: 100vw;
     padding: 30px;
-    background-color: ${props => props.theme.primaryColor};
-    color: ${props => props.theme.whiteColor};
+
+    // Layouts
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
 
+    // Estilos
+    background-color: ${props => props.theme.primaryColor};
+    color: ${props => props.theme.whiteColor};
+
 
     & .img_footer{
+        // medidas
         width: 550px;
+
+        // Layouts
         position: absolute;
         right: -80px;
         top: -80px;
-        opacity: 0.1;
-    }
 
-    @media (min-width: 768px) {
-        
+        // Estilos
+        opacity: 0.1;
     }
 `
 
 export const TextMain = styled.div`
+
+    // Medidas
     width: 100vw;
-    font-size: ${props => props.theme.text_6xl};
+
+    // Layouts
     display: flex;
     flex-direction: column;
+
+    // Estilos
+    font-size: ${props => props.theme.text_6xl};
+
 
 `
 export const Info = styled.div`
-    display: flex;
+
+    // Medidas
     margin-top: 80px;
+
+    // Layouts
+    display: flex;
     flex-direction: column-reverse;
 
+
     @media (min-width: 913px) {
+        // Medidas
+
+        // Layouts
         flex-direction: row;
         align-items: center;
         padding: 10px 0;
+        
+        // Estilos
+
     }
 `
 export const Logo = styled.img`
+    // medidas
     width: 50px;
 
+    // Layouts
+
+    // Estilos
 `
 export const Copy = styled.div`
+    // Medidas
+    width: 100%;
+    padding: 30px;
+
+    // Loyouts
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 30px;
-    font-size: ${props => props.theme.text_lg}; 
-    gap: 10px; 
     flex-direction: column;
-    
+    gap: 10px; 
+
+    // Estilos
+    font-size: ${props => props.theme.text_lg}; 
+
     @media (min-width: 913px) {
+        // Medidas
         width: 30%;
+
+        // Layouts
         align-items: start;
     }
 
 `
 export const Actions = styled.div`
+
+    // Layouts
     flex: 1;
 `
 export const Links = styled.div`
+
+    // Medidas
+    gap: 20px;
+
+    // Layouts
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+
+    // Estilos
 
 `
 
 export const CardLink = styled.div`
+
+    // Medidas
+    gap: 10px; 
+
+    // Layouts
     display: flex;
     flex-direction: column;
-    gap: 10px; 
-    font-size: ${props => props.theme.text_base}; 
     z-index: 10;
+
+    // Estilos
+    font-size: ${props => props.theme.text_base}; 
 
 `
 
 export const Link = styled.div`
+
+    // Medidas
     width: 200px;
+    padding: 5px 10px;
+
+    // Layouts
+
+    // Estilos
     border-left: 3px solid ${props => props.theme.whiteColor};
     color: ${props => props.theme.whiteColor};
-    padding: 5px 10px;
     transition: background-color 0.5s ease-in-out;
     cursor: pointer;
     
     &:hover{
+        // Estilos
         background-color: ${props => props.theme.whiteColor};
-        /* border-left: 3px solid ${props => props.theme.secondColor}; */
         color: ${props => props.theme.primaryColor};
-        /* animation: mouseOn 0.3s ease-in; */
     }
 
     @keyframes mouseOn {
@@ -104,22 +159,36 @@ export const Link = styled.div`
 `
 
 export const Social = styled.div`
-    flex: 1;
+
+    // Medidas
     padding: 10px 30px;
-    display: flex;
-    justify-content: center;
     gap: 10px;
-    border-top: 2px solid ${props => props.theme.whiteColor};
     margin-top: 50px;
 
+    // Layouts
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+    // Estilos
+    border-top: 2px solid ${props => props.theme.whiteColor};
+
     @media (min-width: 768px) {
+        // Layouts
         justify-content: end;
     }
 
 `
 
 export const ImgSocial = styled.img`
+
+    // Medidas
     width: 30px;
-    cursor: pointer;
+
+    // Layouts
     z-index: 5;
+
+    // Estilos
+    cursor: pointer;
+
 `
