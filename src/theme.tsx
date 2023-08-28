@@ -5,7 +5,7 @@ export const DefaultTheme = {
     darkGrayColor: "#313131",
     blackColor: "#000",
     primaryColor: "#1d8afe",
-    secondColor: "#fe731d",
+    secondColor: "#ff6c11",
     
     // Fonts-sizes
     text_xs: "1.2rem",
