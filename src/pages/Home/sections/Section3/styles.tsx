@@ -7,11 +7,8 @@ export const Wrapper = styled.section`
     width: 100vw;
     padding: 70px 70px;
 
-    // Layouts
-
     // Estilos
     background-color: #f2f2f2;
-
 
     @media (max-width: ${props => props.theme.mobile}) {
         // Medidas
@@ -29,17 +26,11 @@ export const CardContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    // Estilos
-
-
     @media (max-width: ${props => props.theme.tablet_max}) {
-        // Medidas
-
+        
         // Layouts
         flex-direction: column
 
-        // Estilos
-        
     }
 
 `

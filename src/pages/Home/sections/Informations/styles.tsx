@@ -6,11 +6,10 @@ type configContainer = {
 
 export const Wrapper = styled.section`
     width:100vw;
-    height: 100vh;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
         flex-direction: row;
 
     }
@@ -20,17 +19,14 @@ export const Wrapper = styled.section`
 export const ImageContainer = styled.div`
     width:100%;
     order: 2;
-    overflow-y: hidden;
 
    & img{
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 100%;
    }
 
-   @media (min-width: 1024px) {
-        height: 100%;
+   @media (min-width: 768px) {
+        width:50%;
    }
 
 `
@@ -45,19 +41,37 @@ export const ContentContainer = styled.div<configContainer>`
     font-size: 18px;
     background-color: #232323;
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 10px;
 
     & h3{
-        width: 400px;
         color: #1d7bff;
         font-size: 28px;
     }
 
-    & p{
-        width: 400px;
+    
+    @media (min-width: 768px) {
+        width:50%;
+        order: ${props => props.order ? 1 : 2};
+
+        & h3{
+            width: 90%;
+        }
+
+        & p{
+            width: 90%;
+        }
+
     }
 
     @media (min-width: 1024px) {
-        order: ${props => props.order ? 1 : 2};
+
+        & h3{
+            width: 500px;
+        }
+
+        & p{
+            width: 500px;
+        }
+
     }
 `
