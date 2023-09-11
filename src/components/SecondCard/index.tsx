@@ -1,9 +1,5 @@
 
-interface SecondCardProps {
-
-}
-
-export default function SecondCard(props : SecondCardProps){
+export default function SecondCard(){
     return(
         <></>
     )

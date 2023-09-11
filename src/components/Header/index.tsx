@@ -2,7 +2,7 @@
 import * as S from "./styles"
 
 // Icons
-import { BsSearch, BsList, BsXLg } from "react-icons/bs"
+import { BsList, BsXLg } from "react-icons/bs"
 
 // Images
 import logo from "../../assets/logo.png"

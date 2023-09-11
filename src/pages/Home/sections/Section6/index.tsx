@@ -5,12 +5,8 @@ import NutritionTable from "../../../../components/NutritionTable"
 import scoop from "../../../../assets/scoop.png"
 import creatina from "../../../../assets/creatina.png"
 
-interface ComponentNameProps {
 
-}
-
-
-export default function ComponentName(props : ComponentNameProps){
+export default function ComponentName(){
     return(
         <S.Wrapper>
             <S.title>TABELA NUTRICIONAL</S.title>

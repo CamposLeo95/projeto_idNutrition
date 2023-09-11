@@ -3,13 +3,7 @@ import * as S from "./styles"
 import Digital from "../../../../assets/Digital.svg"
 import creatina from "../../../../assets/creatina.png"
 
-import BtnMain from "../../../../components/BtnMain"
-
-interface Section5Props {
-
-}
-
-export default function Section5(props : Section5Props){
+export default function Section5(){
     return(
         <S.Wrapper>
             <S.Wrapper1>

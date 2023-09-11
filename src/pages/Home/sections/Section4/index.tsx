@@ -30,6 +30,7 @@ export default function Section4(){
                           link={item.link}
                           textcolor={item.textColor}
                           button= {false}
+                          title={""}
                         />
                     </SwiperSlide>
                 ))}

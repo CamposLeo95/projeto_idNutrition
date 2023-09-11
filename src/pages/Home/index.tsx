@@ -12,19 +12,18 @@ import homemTreinando from "../../assets/homem_treinando.jpg"
 import mulherTreinando from "../../assets/woman_gym.jpg"
 
 // Components
-// import Space from "../../components/Space"
 import Header from "../../components/Header"
 import SideBar from "../../components/SideBar"
 import Section1 from "./sections/Section1"
 import Section2 from "./sections/Section2"
 import Section3 from "./sections/Section3"
 import Section4 from "./sections/Section4"
-import Section5 from "./sections/Section5"
+// import Section5 from "./sections/Section5"
 import Section6 from "./sections/Section6"
 import Informations from "./sections/Informations"
 import Footer from "../../components/Footer"
 import Teste from "./sections/Teste"
-import Space from "../../components/Space"
+// import Space from "../../components/Space"
 
 const title1 = "Melhor horário para tomar Creatina"
 const content1 = [
