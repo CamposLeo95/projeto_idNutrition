@@ -7,6 +7,8 @@ import { IconType } from 'react-icons'
 
 import BtnMain from "../BtnMain"
 
+import { Link  } from "react-scroll"
+
 // Interface
 interface FirstCardProps {
     img: string
@@ -17,9 +19,10 @@ interface FirstCardProps {
     textcolor?: boolean
     link?: string
     button?: boolean
+    id: string
 }
 
-export default function FirstCard({ img, title, textCard, textcolor } : FirstCardProps){
+export default function FirstCard({ img, title, textCard, textcolor, id } : FirstCardProps){
     return(
         <S.CardContainer>
             <S.ImgCard img={img} textcolor={textcolor ? "true" : "false"}>
@@ -30,7 +33,18 @@ export default function FirstCard({ img, title, textCard, textcolor } : FirstCar
             <S.TextCard>
                 <h3>{title}</h3>
                 <p>{textCard}</p>
-                {Button ?  <BtnMain bgcolor="#f45">Ver Mais</BtnMain> : null }
+                {Button 
+                
+                ? <Link  
+                    activeClass="active"
+                    to={id}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                    > 
+                        <BtnMain bgcolor="#f45">Ver Mais</BtnMain> 
+                    </Link>: null }
             </S.TextCard>
         </S.CardContainer>
     )

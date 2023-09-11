@@ -27,12 +27,15 @@ export default function NavBar({ list } : NavBarProps){
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
+                    duration={1000}
                 >
                     {item.name}
                 </Link>
             ))}
-            <BtnMain bgcolor="#fe731d" >comprar</BtnMain>
+            <BtnMain 
+                bgcolor="#fe731d" 
+                link="https://produto.mercadolivre.com.br/MLB-3817117392-pure-creatine-100-id-nutrition-300g-creatina-em-po-_JM"
+            >Saber Mais</BtnMain>
         </S.NavBar>
     )
 }

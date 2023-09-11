@@ -8,21 +8,21 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 //imagens
-import homemTreinando from "../../assets/homem_treinando.jpg"
-import mulherTreinando from "../../assets/woman_gym.jpg"
+import treino from "../../assets/treino.jfif"
+import relogio from "../../assets/relogio.jfif"
+import efeitos from "../../assets/efeitos.jfif"
 
 // Components
 import Header from "../../components/Header"
 import SideBar from "../../components/SideBar"
-import Section1 from "./sections/Section1"
+import Main from "./sections/Main"
 import Section2 from "./sections/Section2"
 import Section3 from "./sections/Section3"
-import Section4 from "./sections/Section4"
-// import Section5 from "./sections/Section5"
-import Section6 from "./sections/Section6"
+// import Section4 from "./sections/Section4"
+import Tabela from "./sections/Tabela"
 import Informations from "./sections/Informations"
 import Footer from "../../components/Footer"
-import Teste from "./sections/Teste"
+import About from "./sections/About"
 // import Space from "../../components/Space"
 
 const title1 = "Melhor horário para tomar Creatina"
@@ -36,7 +36,7 @@ const content1 = [
 
 ]
 
-const title2 = "Efeitos colaterais da creatina com selo Creapure® "
+const title2 = "Efeitos colaterais da creatina"
 const content2 =[ 
     "Via de regra, a creatina é um suplemento totalmente seguro. Existem alguns relatos relacionados a problemas como diarreia, queda de cabelo e dores de cabeça, entretanto, são muito escassos e citados em poucos estudos sobre o assunto.",
 
@@ -67,15 +67,15 @@ export default function Home(){
         },
         {
             id: "produtos",
-            name: "Produtos"
+            name: "Produto"
         }, 
         {
-            id: "contatos",
-            name: "Contatos"
+            id: "consumo",
+            name: "Consumo"
         }, 
         {
-            id: "sobre",
-            name: "Sobre Nós"
+            id: "tabela",
+            name: "Tabela Nutricional"
         }
     ]
 
@@ -95,17 +95,14 @@ export default function Home(){
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </div>
                 <SideBar showmenu={ showMenu } setShowMenu={ setShowMenu } list = { listNav }/>
-                <Section1 />
-                <Teste />
-                {/* <Section5 /> */}
+                <Main />
+                <About />
                 <Section2 />
-                <Section3 />
-                
-                <Informations order title={title1} contents={content1} image={homemTreinando}/>
-                <Informations title={title2} contents={content2} image={mulherTreinando}/>
-                <Informations order title={title3} contents={content3} image={homemTreinando}/>
-                <Section6 />
-                <Section4 />    
+                <Section3 />                  
+                <Informations order title={title1} contents={content1} image={relogio} id="horario"/>
+                <Informations  title={title2} contents={content2} image={efeitos} id="efeitos"/>
+                <Informations order title={title3} contents={content3} image={treino} id="treino"/>   
+                <Tabela />
             </S.Wrapper>
             <Footer />
         </>

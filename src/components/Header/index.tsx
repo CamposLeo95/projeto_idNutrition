@@ -20,7 +20,7 @@ interface IHeaderProps {
     }[]
 }
 
-export default function Header({showmenu, setShowMenu, listNav} : IHeaderProps){
+export default function Header( {showmenu, setShowMenu, listNav } : IHeaderProps){
 
     return(
         <S.Header>
