@@ -1,17 +1,16 @@
 import * as S from "./styles"
 
-
-
 interface InformationsProps {
     order?: boolean
     contents: string[]
     title: string
     image: string
+    id: string
 }
 
-export default function Informations({ order, contents, title, image } : InformationsProps){
+export default function Informations({ order, contents, title, image, id } : InformationsProps){
     return(
-        <S.Wrapper>
+        <S.Wrapper id={id}>
             <S.ImageContainer>
                 <img src={image} alt="" />
             </S.ImageContainer>
@@ -21,7 +20,6 @@ export default function Informations({ order, contents, title, image } : Informa
                     <p>{content}</p>
                 ))}     
             </S.ContentContainer>
-
         </S.Wrapper>
     )
 }
