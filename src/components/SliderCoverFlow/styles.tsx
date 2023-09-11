@@ -16,7 +16,7 @@ export const Container = styled.div`
     cursor: pointer;
 
     // Swiper
-    --swiper-navigation-color: red;
+    --swiper-navigation-color: #ff670f;
     --swiper-navigation-sides-offset: 40px;
     --swiper-navigation-size: 44px;
 
