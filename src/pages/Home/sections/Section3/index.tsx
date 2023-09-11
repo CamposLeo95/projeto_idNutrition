@@ -6,7 +6,7 @@ import TitleSection from "../../../../components/TitleSection"
 import FirstCard from "../../../../components/FirstCard"
 
 // Imagens
-import man from "../../../../assets/man_gym.jpg"
+import man from "../../../../assets/homem_treinando.jpg"
 import woman from "../../../../assets/woman_gym.jpg"
 import halter from "../../../../assets/halter_gym.jpg"
 
@@ -19,7 +19,8 @@ export default function Section3(){
         {
           img: man,
           imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni ipsam in ab officia voluptatibus illum",
+          title: "Melhor horário para tomar Creatina ",
+          cardText: "O suplemento de creatina apresenta seus benefícios através do uso crônico. Por isso...",
           icon: BsFillEmojiLaughingFill,
           link: "http://google.com",
           textColor: true,
@@ -27,7 +28,8 @@ export default function Section3(){
         {
           img: woman,
           imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elia voluptatibus illum",
+          title: "Efeitos colaterais da creatina",
+          cardText: "Via de regra, a creatina é um suplemento totalmente seguro. Existem alguns relatos relacionados a problemas...",
           icon: BsFillEmojiLaughingFill,
           link: "http://google.com",
           textColor: false,
@@ -35,7 +37,8 @@ export default function Section3(){
         {
           img: halter,
           imgText: "Lorem ipsum dolor sit",
-          cardText: "Lorem ipsum dolor sit amet consectetur adillum",
+          title: "Creatina antes ou depois do treino",
+          cardText: "Os pesquisadores não chegaram a um consenso com relação a esse assunto. Enquanto alguns...",
           icon: BsFillEmojiLaughingFill,
           link: "http://google.com",
           textColor: true,
@@ -45,13 +48,14 @@ export default function Section3(){
     return(
         <S.Wrapper  id ="produtos">
             <TitleSection 
-                title="Lorem ipsum dolor sit amet consectetur"
-                subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque placeat esse repudiandae rem a quas"
+                title="COMO CONSUMIR CREATINA"
+                subtitle=""
             />
             <S.CardContainer>
 
             {listCards.map((item, key) => (
               <FirstCard key={key}
+                title={item.title}
                 img={item.img} 
                 textCard={item.cardText}
                 textImg={item.imgText}
