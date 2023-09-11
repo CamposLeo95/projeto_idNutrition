@@ -17,6 +17,7 @@ export default function Section3(){
 
     const listCards = [
         {
+          id: "horario",
           img: man,
           imgText: "Lorem ipsum dolor sit",
           title: "Melhor horário para tomar Creatina ",
@@ -26,6 +27,7 @@ export default function Section3(){
           textColor: true,
         },
         {
+          id: "efeitos",
           img: woman,
           imgText: "Lorem ipsum dolor sit",
           title: "Efeitos colaterais da creatina",
@@ -35,6 +37,7 @@ export default function Section3(){
           textColor: false,
         },
         {
+          id: "treino",
           img: halter,
           imgText: "Lorem ipsum dolor sit",
           title: "Creatina antes ou depois do treino",
@@ -46,7 +49,7 @@ export default function Section3(){
     ]
 
     return(
-        <S.Wrapper  id ="produtos">
+        <S.Wrapper  id ="consumo">
             <TitleSection 
                 title="COMO CONSUMIR CREATINA"
                 subtitle=""
@@ -62,6 +65,7 @@ export default function Section3(){
                 icon={item.icon}
                 link={item.link}
                 textcolor={item.textColor}
+                id = {item.id}
               />
             ))}
             </S.CardContainer>

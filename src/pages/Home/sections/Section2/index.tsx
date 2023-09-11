@@ -7,10 +7,10 @@ export default function Section2(){
     return(
         <S.Wrapper >
             <S.MainTitle>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                A creatina com pureza elevada e alto padrão de qualidade
             </S.MainTitle>
             <S.SubTitle >
-                Lorem, ipsum dolor sit amet consectetur adipisicing 
+                A creatina com pureza elevada e alto padrão de qualidade
             </S.SubTitle>
             <S.ImgPessoa src={Pessoa} />
         </S.Wrapper>

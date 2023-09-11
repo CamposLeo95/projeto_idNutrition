@@ -14,7 +14,7 @@ import DB from "../../../../db/db"
 export default function Section4(){
 
     return(
-        <S.Wrapper id="contatos">
+        <S.Wrapper>
             <TitleSection 
                 title="Lorem ipsum dolor sit amet consectetur adipisicing elit"
                 subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione quidem asperiores nulla, impedit odit. Libero,"
@@ -31,6 +31,7 @@ export default function Section4(){
                           textcolor={item.textColor}
                           button= {false}
                           title={""}
+                          id=""
                         />
                     </SwiperSlide>
                 ))}
