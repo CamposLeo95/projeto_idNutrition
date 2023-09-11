@@ -40,7 +40,12 @@ export const TextMain = styled.div`
     flex-direction: column;
 
     // Estilos
-    font-size: ${props => props.theme.text_6xl};
+    font-size: ${props => props.theme.text_5xl};
+
+    & .subTitle{
+        font-size: ${props => props.theme.text_3xl};
+        font-weight: 100;
+    }
 
 
 `

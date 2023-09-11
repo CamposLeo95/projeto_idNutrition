@@ -11,8 +11,8 @@ export default function Footer(){
     return(
         <S.Wrapper>
             <S.TextMain>
-                <span>ID Nutrition</span> 
-                <span>Shape the future</span> 
+                <span className="title">ID Nutrition</span> 
+                <span className="subTitle">Sua marca, sua identidade.</span> 
             </S.TextMain>
             <S.Info>
                 <S.Copy>
