@@ -3,7 +3,7 @@ import  styled  from "styled-components";
 export const Wrapper = styled.section`
     // Medidas
     width: 100vw;
-    padding: 80px 0;
+    padding: 40px 0;
 
     // Layouts
     

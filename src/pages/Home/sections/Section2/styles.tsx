@@ -11,8 +11,10 @@ export const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
     
     // Estilos
+    background-color: #212121;
 
 `
 
@@ -22,8 +24,10 @@ export const MainTitle = styled.h3`
     // Layouts
     
     // Estilos
-    color: ${props => props.theme.darkGrayColor};
+    /* color: ${props => props.theme.darkGrayColor}; */
+    color: #fff;
     font-size: ${props => props.theme.text_2xl};
+    z-index: 1;
 
  @media (min-width: ${props => props.theme.mobile}) {
       // Medidas
@@ -51,6 +55,7 @@ export const SubTitle = styled.p`
     // Estilos
     color: ${props => props.theme.primaryColor};
     font-size: ${props => props.theme.text_base};
+    z-index: 1;
 
     @media (min-width: ${props => props.theme.mobile}) {
          // Medidas
@@ -60,4 +65,18 @@ export const SubTitle = styled.p`
          // Estilos
          font-size: ${props => props.theme.text_2xl};
  }
+`
+export const ImgPessoa = styled.img`
+     width: 350px;
+     position: absolute;
+     /* top: 50px; */
+     right: -150px;
+     filter:grayscale();
+     opacity: 0.3;
+
+     @media (min-width: 768px){
+          width: 580px;
+          right: -200px;
+          opacity: 1;
+     }
 `

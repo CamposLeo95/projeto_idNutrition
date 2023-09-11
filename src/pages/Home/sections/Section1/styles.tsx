@@ -2,50 +2,55 @@ import styled  from "styled-components";
 
 export const Wrapper = styled.div`
     // Medidas
-    padding: 0 30px;
+    padding: 0px 20px 50px 20px;
     width:100vw;
+    height: 100vh;
 
     // Layouts
     position: relative;
     display: flex;
     justify-content: center;
-    
-    // Estilos
+    align-items: center;
+
  
     @media (min-width: 913px) {
         // Medidas
         margin-top: 80px;
         gap: 20px;
 
-        // Layouts
-        
-        // Estilos
-
     }
+`
+
+export const ImgContainer = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: ${props => props.theme.tablet_max}){
+        display: none;
+    }
+
 `
 
 export const MainContainer = styled.div`
     // Medidas
     width: 100%;
-    padding: 50px 0;
     gap: 25px;
 
     // Layouts
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content:center;
     position: relative; 
     
     // Estilos
 
-
-
      @media (min-width: ${props => props.theme.tablet_max}) {
         // Medidas
-        margin-top: 150px;
-        width: 50%;
-        height: 65vh;  
+        width: 100%;
+        height: 100%;  
 
         // Layouts
 
@@ -66,7 +71,7 @@ export const TextMain = styled.h1`
 
 
     & span {
-            // Medidas
+    // Medidas
 
     // Layouts
     
@@ -90,15 +95,18 @@ export const TextMain = styled.h1`
 
 export const ImgDesk = styled.img`
     // Medidas
-    max-width: 40%;
-    min-width: 550px;
-    height: 100%;
+    max-width: 50%;
+    /* width: 100%; */
+    /* min-width: 550px; */
+    /* height: 300px; */
 
     // Layouts
     position: relative;
     top: 0px; 
     
     // Estilos
+        filter: drop-shadow(-25px 25px 20px #000000e0);
+
 
     @media (max-width: ${props => props.theme.tablet_max}) { 
         // Medidas
@@ -113,7 +121,7 @@ export const ImgDesk = styled.img`
 
 export const ImgMobile = styled.img`
     // Medidas
-    max-width: 70%;
+    max-width: 60%;
 
     // Layouts
     position: relative;

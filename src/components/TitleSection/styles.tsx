@@ -4,7 +4,7 @@ export const TitleContainer = styled.div`
 
     // Medidas
     margin-top: 20px;
-    padding: 0 70px;
+    padding: 0 30px;
     gap: 10px;
 
     // Layouts
@@ -15,6 +15,9 @@ export const TitleContainer = styled.div`
 
     // Estilos
 
+    @media (min-width: 768px) {
+        padding: 0 70px;
+    }
  
 `
 
@@ -26,7 +29,11 @@ export const Title = styled.h3`
     //Layout
 
     //Estilos
-    font-size: ${props => props.theme.text_2xl}
+    font-size: ${props => props.theme.text_xl};
+
+    @media (min-width: 768px) {
+        font-size: ${props => props.theme.text_5xl};
+    }
 `
 
 export const SubTitle = styled.p`
@@ -35,5 +42,10 @@ export const SubTitle = styled.p`
     // Layouts
 
     // Estilos
-    font-size: ${props => props.theme.text_lg}
+    color: ${props => props.theme.darkGrayColor};
+    font-size: ${props => props.theme.text_lg};
+
+    @media (min-width: 768px) {
+        font-size: ${props => props.theme.text_2xl};
+    }
 `
