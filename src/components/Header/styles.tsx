@@ -17,6 +17,7 @@ export const Header = styled.header`
 
     // Estilos
     background-color: ${props => props.theme.whiteColor};
+    box-shadow: 0 0 5px ${props => props.theme.blackColor};
  
     .icons{
         // Medidas

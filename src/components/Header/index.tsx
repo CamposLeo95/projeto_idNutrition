@@ -24,7 +24,7 @@ export default function Header({showmenu, setShowMenu, listNav} : IHeaderProps){
 
     return(
         <S.Header>
-            <BsSearch className="icons"/>
+            {/* <BsSearch className="icons"/> */}
             <S.Logo src={ logo } alt="" />
             {showmenu 
                 ? <BsXLg className="icons" onClick={() => setShowMenu(false)}/>
