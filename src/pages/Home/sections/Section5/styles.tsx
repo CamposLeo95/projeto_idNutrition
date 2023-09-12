@@ -12,14 +12,13 @@ export const Wrapper = styled.section`
     align-items: center;
 
     // Estilos
-    background-color: ${props => props.theme.secondColor};
+    /* background-color: ${props => props.theme.secondColor}; */
+    background-image: linear-gradient(180deg, #232323, #232323, #fff);
     color: ${props => props.theme.whiteColor};
-    border-radius: 30px;
-    box-shadow: 0 0 15px black;
 
     @media (min-width: ${props => props.theme.desk}) {
         flex-direction: row;
-        border-radius: 100px 0px 100px 0px;
+
     }
 
 `
@@ -66,7 +65,7 @@ export const Wrapper2 = styled.div`
 
     // Estilos
     font-size: ${props => props.theme.text_xs};
-    background-image: radial-gradient(${props => props.theme.whiteColor}, ${props => props.theme.whiteColor}, ${props => props.theme.secondColor}, transparent);
+    /* background-image: radial-gradient(${props => props.theme.whiteColor}, ${props => props.theme.whiteColor}, ${props => props.theme.secondColor}, transparent); */
 
 
     & img{

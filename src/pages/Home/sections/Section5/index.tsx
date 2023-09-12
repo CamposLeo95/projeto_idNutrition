@@ -1,5 +1,7 @@
+//styles
 import * as S from "./styles"
 
+//imagens
 import Digital from "../../../../assets/Digital.svg"
 import creatina from "../../../../assets/creatina.png"
 
@@ -24,21 +26,12 @@ export default function Section5(){
                 </S.Card>
                 <S.Card>
                     <img src={Digital} />
-                    <p>SELO CREAPURE®</p>
-                </S.Card>
-                <S.Card>
-                    <img src={Digital} />
                     <p>AUMENTO DE VOLUME MUSCULAR</p>
                 </S.Card>
             </S.Wrapper1>
             <S.Wrapper2>
                 <img src={creatina} />
-                <div>
-                    <h3>Ver Tabela Nutricional</h3>
-                    <p>Consulte Condições</p>
-                </div>
-            </S.Wrapper2>
-            
+            </S.Wrapper2>       
             <S.Wrapper3>
                 <S.Title>
                     <h2>ID Nutrition Creatina</h2>
@@ -53,7 +46,7 @@ export default function Section5(){
                     <S.Button>
                         Ver no Site!
                     </S.Button>
-                    <p>EM ESTOQUE. ENVIO IMEDIATO!</p>
+                    {/* <p>EM ESTOQUE. ENVIO IMEDIATO!</p> */}
                 </S.Action>
             </S.Wrapper3>
         </S.Wrapper>
