@@ -5,10 +5,10 @@ import * as S from "./styles"
 import { BsList, BsXLg } from "react-icons/bs"
 
 // Images
-import logo from "../../assets/logo.png"
+import logo from "../../../../assets/logo.png"
 
 // Components
-import NavBar from "../NavBar"
+import NavBar from "../../../../components/NavBar"
 
 // Inteface
 interface IHeaderProps {
@@ -20,7 +20,7 @@ interface IHeaderProps {
     }[]
 }
 
-export default function Header( {showmenu, setShowMenu, listNav } : IHeaderProps){
+export default function SectionHeader( {showmenu, setShowMenu, listNav } : IHeaderProps){
 
     return(
         <S.Header>

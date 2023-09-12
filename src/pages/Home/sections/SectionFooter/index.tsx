@@ -2,12 +2,12 @@
 import * as S from "./styles"
 
 //images
-import Digital from "../../assets/Digital.svg"
-import IconFace from "../../assets/icon-face.svg"
-import IconInsta from "../../assets/icon-insta.svg"
-import IconYoutube from "../../assets/icon-yt.svg"
+import Digital from "../../../../assets/Digital.svg"
+import IconFace from "../../../../assets/icon-face.svg"
+import IconInsta from "../../../../assets/icon-insta.svg"
+import IconYoutube from "../../../../assets/icon-yt.svg"
 
-export default function Footer(){
+export default function SectionFooter(){
     return(
         <S.Wrapper>
             <S.TextMain>

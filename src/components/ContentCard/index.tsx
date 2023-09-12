@@ -5,7 +5,7 @@ import * as S from "./styles"
 //Icons 
 import { IconType } from 'react-icons'
 
-import BtnMain from "../BtnMain"
+import BtnMain from "../ButtonMain"
 
 import { Link  } from "react-scroll"
 
@@ -22,7 +22,7 @@ interface FirstCardProps {
     id: string
 }
 
-export default function FirstCard({ img, title, textCard, textcolor, id } : FirstCardProps){
+export default function ContentCard({ img, title, textCard, textcolor, id } : FirstCardProps){
     return(
         <S.CardContainer>
             <S.ImgCard img={img} textcolor={textcolor ? "true" : "false"}>
@@ -43,7 +43,7 @@ export default function FirstCard({ img, title, textCard, textcolor, id } : Firs
                     offset={-70}
                     duration={1000}
                     > 
-                        <BtnMain bgcolor="#f45">Ver Mais</BtnMain> 
+                        <BtnMain bgcolor="#ff6c11">Ver Mais</BtnMain> 
                     </Link>: null }
             </S.TextCard>
         </S.CardContainer>

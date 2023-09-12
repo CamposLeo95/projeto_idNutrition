@@ -5,9 +5,9 @@ import * as S from "./styles"
 import creatina from "../../../../assets/creatina.png"
 
 // Components
-import BtnMain from "../../../../components/BtnMain"
+import ButtonMain from "../../../../components/ButtonMain"
 
-export default function Main(){
+export default function SectionMain(){
     return(
         <>
             <S.Wrapper id="inicio">
@@ -23,10 +23,10 @@ export default function Main(){
                         A mais alta tecnologia em um suplemento para o seu treino!
                     </S.TextSecondary>
                     <S.BtnDiv>
-                        <BtnMain 
+                        <ButtonMain 
                             bgcolor="#1d8afe" 
                             link="https://produto.mercadolivre.com.br/MLB-3817117392-pure-creatine-100-id-nutrition-300g-creatina-em-po-_JM"
-                        >saber mais</BtnMain>
+                        >saber mais</ButtonMain>
                     </S.BtnDiv>
                 </S.MainContainer>       
             </S.Wrapper>

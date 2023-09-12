@@ -2,7 +2,7 @@
 import * as S from "./styles"
 
 // Components
-import BtnMain from "../BtnMain"
+import BtnMain from "../ButtonMain"
 
 
 import { Link  } from "react-scroll"

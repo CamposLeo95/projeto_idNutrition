@@ -6,7 +6,7 @@ import TitleSection from "../../../../components/TitleSection"
 import scoop from "../../../../assets/scoop.png"
 
 
-export default function Tabela(){
+export default function SectionTable(){
     return(
         <S.Wrapper id="tabela">
             <TitleSection

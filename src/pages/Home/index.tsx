@@ -13,17 +13,19 @@ import relogio from "../../assets/relogio.jfif"
 import efeitos from "../../assets/efeitos.jfif"
 
 // Components
-import Header from "../../components/Header"
 import SideBar from "../../components/SideBar"
-import Main from "./sections/Main"
+
+
+// Sections
+import SectionHeader from "./sections/SectionHeader"
+import SectionMain from "./sections/SectionMain"
 import Section2 from "./sections/Section2"
 import Section3 from "./sections/Section3"
-// import Section4 from "./sections/Section4"
-import Tabela from "./sections/Tabela"
-import Informations from "./sections/Informations"
-import Footer from "../../components/Footer"
-import About from "./sections/About"
-// import Space from "../../components/Space"
+import Section5 from "./sections/Section5"
+import SectionTable from "./sections/SectionTable"
+import SectionInformations from "./sections/SectionInformations"
+import SectionFooter from "./sections/SectionFooter"
+import SectionAbout from "./sections/SectionAbout"
 
 const title1 = "Melhor horário para tomar Creatina"
 const content1 = [
@@ -89,22 +91,24 @@ export default function Home(){
 
     return(
         <>
-            <Header showmenu ={showMenu} setShowMenu={setShowMenu} listNav={listNav} />
+            <SectionHeader showmenu ={showMenu} setShowMenu={setShowMenu} listNav={listNav} />
             <S.Wrapper>
                 <div className="text-cinza">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </div>
                 <SideBar showmenu={ showMenu } setShowMenu={ setShowMenu } list = { listNav }/>
-                <Main />
-                <About />
+                <SectionMain />
+                <SectionAbout />
                 <Section2 />
-                <Section3 />                  
-                <Informations order title={title1} contents={content1} image={relogio} id="horario"/>
-                <Informations  title={title2} contents={content2} image={efeitos} id="efeitos"/>
-                <Informations order title={title3} contents={content3} image={treino} id="treino"/>   
-                <Tabela />
+                <Section3 />  
+                               
+                <SectionInformations order title={title1} contents={content1} image={relogio} id="horario"/>
+                <SectionInformations  title={title2} contents={content2} image={efeitos} id="efeitos"/>
+                <SectionInformations order title={title3} contents={content3} image={treino} id="treino"/>   
+                <Section5 /> 
+                <SectionTable />
             </S.Wrapper>
-            <Footer />
+            <SectionFooter />
         </>
     )
 }

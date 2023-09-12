@@ -6,9 +6,9 @@ import Digital from "../../../../assets/Digital.svg"
 import creatina from "../../../../assets/creatina.png"
 
 import NutritionTable from "../../../../components/NutritionTable"
-import BtnMain from "../../../../components/BtnMain"
+import BtnMain from "../../../../components/ButtonMain"
 
-export default function Teste(){
+export default function SectionAbout(){
 
     const [showTable, setShowTable] = useState<boolean>(false)
 
@@ -34,7 +34,7 @@ export default function Teste(){
                     A Creatina monohidratada aumenta a capacidade do músculo de gerar força e, consequentemente, a capacidade de treino. Além disso, previne o catabolismo muscular e influencia a transcrição gênica. 
                     </p>
                     <BtnMain 
-                            bgcolor="#ff0000" 
+                            bgcolor="#ff7b00" 
                             link="https://produto.mercadolivre.com.br/MLB-3817117392-pure-creatine-100-id-nutrition-300g-creatina-em-po-_JM"
                     >Ver mais</BtnMain>
                 </S.TextContainer>

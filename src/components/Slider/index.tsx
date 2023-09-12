@@ -14,11 +14,11 @@ import 'swiper/css/effect-coverflow'
 // Import Swiper styles
 import 'swiper/css';
 
-interface SliderCoverFlowProps{
+interface SliderProps{
   children: ReactNode
 }
 
-export default function SliderCoverFlow ({ children }: SliderCoverFlowProps) {
+export default function Slider ({ children }: SliderProps) {
 
   return (
     <S.Container>

@@ -1,6 +1,7 @@
+//styles
 import * as S from "./styles"
 
-interface InformationsProps {
+interface SectionInformationsProps {
     order?: boolean
     contents: string[]
     title: string
@@ -8,7 +9,7 @@ interface InformationsProps {
     id: string
 }
 
-export default function Informations({ order, contents, title, image, id } : InformationsProps){
+export default function SectionInformations({ order, contents, title, image, id } : SectionInformationsProps){
     return(
         <S.Wrapper id={id}>
             <S.ImageContainer>

@@ -3,7 +3,7 @@ import * as S from "./styles"
 
 // Componentes
 import TitleSection from "../../../../components/TitleSection"
-import FirstCard from "../../../../components/FirstCard"
+import ContentCard from "../../../../components/ContentCard"
 
 // Imagens
 import man from "../../../../assets/homem_treinando.jpg"
@@ -57,7 +57,7 @@ export default function Section3(){
             <S.CardContainer>
 
             {listCards.map((item, key) => (
-              <FirstCard key={key}
+              <ContentCard key={key}
                 title={item.title}
                 img={item.img} 
                 textCard={item.cardText}
