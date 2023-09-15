@@ -20,14 +20,14 @@ export default function SectionMain(){
                     </S.TextMain>
                     <S.ImgMobile src={ creatina }/>
                     <S.TextSecondary>
-                        A mais alta tecnologia em um suplemento para o seu treino!
+                    Experimente a revolução fitness com nossa creatina de alta tecnologia, projetada para maximizar seus resultados com uma fórmula inovadora de última geração.
                     </S.TextSecondary>
-                    <S.BtnDiv>
+                    <S.ButtonDiv>
                         <ButtonMain 
                             bgcolor="#1d8afe" 
                             link="https://produto.mercadolivre.com.br/MLB-3817117392-pure-creatine-100-id-nutrition-300g-creatina-em-po-_JM"
                         >saber mais</ButtonMain>
-                    </S.BtnDiv>
+                    </S.ButtonDiv>
                 </S.MainContainer>       
             </S.Wrapper>
         </>

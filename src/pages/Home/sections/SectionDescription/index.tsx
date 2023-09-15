@@ -5,7 +5,7 @@ import * as S from "./styles"
 import Digital from "../../../../assets/Digital.svg"
 import creatina from "../../../../assets/creatina.png"
 
-export default function Section5(){
+export default function SectionDescription(){
     return(
         <S.Wrapper>
             <S.Wrapper1>
@@ -15,9 +15,7 @@ export default function Section5(){
                 </S.Title>
                 </S.Card>
                 <S.Card>
-                    <div>
-                        <img src={Digital} />
-                    </div>
+                    <div><img src={Digital} /></div>
                     <p>A CREATINA AUXILIA NA MANUTENÇÃO DOS NÍVEIS DE ENERGIA DURANTE O TREINO</p>
                 </S.Card>
                 <S.Card>
@@ -43,10 +41,7 @@ export default function Section5(){
                     <p>No boleto ou no pix</p>
                 </S.Price>
                 <S.Action>
-                    <S.Button>
-                        Ver no Site!
-                    </S.Button>
-                    {/* <p>EM ESTOQUE. ENVIO IMEDIATO!</p> */}
+                    <S.Button>Ver no Site!</S.Button>
                 </S.Action>
             </S.Wrapper3>
         </S.Wrapper>

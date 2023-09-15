@@ -52,17 +52,12 @@ export const MainContainer = styled.div`
         // Medidas
         width: 100%;
         height: 100%;  
-
-        // Layouts
-
-        // Estilos
-
      }
 `
 
 export const TextMain = styled.h1`
     // Medidas
-    width: 100%;
+    max-width: 500px;
 
     // Layouts
     text-align: center;
@@ -70,24 +65,28 @@ export const TextMain = styled.h1`
     // Estilos
     font-size: ${props => props.theme.text_2xl};
 
-
     & span {
     
     // Estilos
         color: ${props => props.theme.primaryColor};
     }
 
-    @media (min-width: ${props => props.theme.tablet_max}) {
+    @media (min-width: 768px) {
         // Medidas
         width: 100%;
 
         // Layouts
-        text-align: start;
+        text-align: center;
         
         // Estilos
         font-size: ${props => props.theme.text_4xl};
-
     }
+
+    @media (min-width:1024px ){
+       
+       //layout 
+       text-align: start;
+   }
 
 `
 
@@ -117,18 +116,16 @@ export const ImgMobile = styled.img`
 
     // Layouts
     position: relative;
-    
-    // Estilos
 
-
-    @media (min-width: ${props => props.theme.tablet_max}){
-        
+    @media (min-width: ${props => props.theme.tablet_max}){      
         // Estilos
         display: none;
     }
 `
 
 export const TextSecondary = styled.p`
+    // Width
+    max-width: 500px;
 
     // Layouts
     text-align: center;
@@ -137,38 +134,39 @@ export const TextSecondary = styled.p`
     font-size: 16px;
 
 
-    @media (min-width: ${props => props.theme.tablet_max}) {
+    @media (min-width:768px ){
         // Medidas
         width: 100%;
-
-        // Layouts
-        text-align: start;
         
         // Estilos
-        font-size: ${props => props.theme.text_lg};
+        font-size: ${props => props.theme.text_2xl};
+    }
 
+    @media (min-width:1024px ){
+       
+        //layout 
+        text-align: start;
     }
 `
 
-export const BtnDiv = styled.div`
+export const ButtonDiv = styled.div`
+
     // Medidas
-    width: 100%;
+    max-width: 600px;
     gap: 10px;
 
     // Layouts
     display: flex;
     justify-content: center;
+
     
-    // Estilos
-
-
-    @media (min-width: ${props => props.theme.tablet_max}) {
+    @media (min-width: 768px) {
         // Medidas
         margin-top: 50px;
+        background-color: red;
 
         // Layouts
         position: relative;
-        text-align: start;
         justify-content: start;
 
     }
